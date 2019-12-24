@@ -1,33 +1,41 @@
                 /* MOBILE VIEW */
+                /* Main Styles */
 
-body {
-  background: #FFCB15;
-}
-
-.logo{ 
-  margin: 0 auto;
-  max-width: 200px;
-  width: 100vw;
-}
-
-h1 {
-  color: lightyellow;
-  font-size: 3rem;
-  padding-left: 2vw;
-}
-
-.nav-grid {
-  background: #d4d4d4;
-  display: block;
+html, body, p, h1, h2, h3, h4, h5, h6, a, strong, em, 
+nav, header {
   margin: 0;
   padding: 0;
-  width: 100%;
+  box-sizing: border-box;
 }
-
+body {
+  background: #FFCB15;
+  color: #fff;
+}
+nav {
+  background: #ffafed;
+  display: block;
+  padding-bottom: 4vh;
+  width: 100%;
+  
+}
+img.logo{
+  display: block;
+  margin: 0 auto;
+  padding: 3vh 0; 
+  max-width: 200px;
+  width: 50%;
+}
+.nav{
+  padding: 0;
+}
 .nav li {
   text-align: center;
   display: block;
   list-style: none;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
 }
 .grid {
   margin: 0 auto;
@@ -37,13 +45,27 @@ h1 {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 200px;
-  width: 100vw;
+  width: 100%;
 }
 
+.tote {
+  margin-bottom: 5vh;
+}
+
+p {
+  margin-bottom: 5vh;
+}
+
+          /* ABOUT STYLING*/
+h1 {
+  color: lightyellow;
+  font-size: 3rem;
+  padding-left: 2vw;
+}
 @media screen and (min-width: 900px) {
   .nav-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     grid-template-rows: 1fr;
   }
   .logo{ 
